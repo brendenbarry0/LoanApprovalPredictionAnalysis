@@ -1,6 +1,6 @@
 # Loan Approval Prediction Analysis
 
-**Anna Luu & Brenden Barry** — University of California, Davis
+**Anna Luu & Brenden Barry** - University of California, Davis
 
 ## Description
 
@@ -30,12 +30,13 @@ Once the dataset is loaded, run all cells to reproduce the results.
 
 ## Results
 
-Model -> Accuracy
-Logistic Regression (numeric features only) -> 73.56%
-Logistic Regression (+ categorical features) -> 73.89%
-Logistic Regression (+ StandardScaler) -> 87.08%
-Random Forest -> 91.41%
-**Gradient Boosting** -> **92.04%**
+0) Model -> Accuracy
+1) Logistic Regression (numeric features only) -> 73.56%
+2) Logistic Regression (+ categorical features) -> 73.89%
+3) Logistic Regression (+ StandardScaler) -> 87.08%
+4) Random Forest -> 91.41%
+5) **Gradient Boosting** -> **92.04%**
+6) Feature Engineering models -> insignificant
 
 The 90% accuracy target was met by both Random Forest and Gradient Boosting. "credit_score" was the top predictive feature in both models.
  
