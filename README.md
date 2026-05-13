@@ -1,23 +1,46 @@
-# Loan Risk Analysis 
+# Loan Approval Prediction Analysis
 
-## Description: 
-This project utilizes a dataset obtained from Kaggle that shows various factors that led to a loan approval/rejection. We are using this dataset to develop and evaluate the effectiveness of a machine learning model in predicting loan approval. 
+**Anna Luu & Brenden Barry** — University of California, Davis
 
-## Getting Started:
-Please download this CSV file from Kaggle. It will be used to run the code. 
-https://www.kaggle.com/datasets/parthpatel2130/realistic-loan-approval-dataset-us-and-canada?resource=download  
+## Description
 
-Optionally, this CSV is also available in the repository.
-## Dataset Licensing 
-https://creativecommons.org/licenses/by-nc/4.0/
+This project develops and evaluates machine learning models for predicting loan approval outcomes based on borrower financial profiles. Using a 50,000-sample dataset sourced from Kaggle, we benchmarked three classification approaches such as Logistic Regression, Random Forest, and Gradient Boosting. We set a target of achieving 90%+ accuracy. Through iterative refinement, including feature scaling and feature engineering, our best model (Gradient Boosting) achieved **92.04% accuracy** with an **AUC of 0.980**.
 
-## Running The Code:
-The repository contains a file called "FinalDraft" which contains the code for the midterm-level model. 
+## Getting Started
 
-To run the code, open the 'FinalDraft' file in Google Colab. 
+### Dataset
 
-Then upload the dataset. There are two options:
-1. Upload CSV manually
-2. Save CSV file in Google Drive. Mount google drive to access file directly in Google Colab.
+Download the dataset from Kaggle using the link below and save it as a `.csv` file:
 
-Run the code to display the data and results. 
+🔗 **[Realistic Loan Approval Dataset | US & Canada](https://www.kaggle.com/datasets/parthpatel2130/realistic-loan-approval-dataset-us-and-canada?resource=download)**
+
+\*The CSV is also available directly in this repo
+
+**Dataset license:** [Creative Commons BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
+### Running the Code
+
+The primary notebook is **"FinalDraft"**, which contains the full model. Open it in Google Colab, then load the dataset using one of the following methods:
+
+1) Upload the CSV file directly when prompted in the notebook.
+
+2) Save the CSV to your Google Drive, then mount your Drive within Colab to access it.
+
+Once the dataset is loaded, run all cells to reproduce the results.
+
+## Results
+
+Model -> Accuracy
+Logistic Regression (numeric features only) -> 73.56%
+Logistic Regression (+ categorical features) -> 73.89%
+Logistic Regression (+ StandardScaler) -> 87.08%
+Random Forest -> 91.41%
+**Gradient Boosting** -> **92.04%**
+
+The 90% accuracy target was met by both Random Forest and Gradient Boosting. "credit_score" was the top predictive feature in both models.
+ 
+## Tech Stack
+ 
+- **Language:** Python (.ipynb)
+- **Libraries:** scikit-learn, pandas, NumPy, matplotlib, seaborn
+- **Environment:** Google Colab
