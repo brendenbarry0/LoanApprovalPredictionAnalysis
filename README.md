@@ -12,7 +12,7 @@ This project develops and evaluates machine learning models for predicting loan 
 
 Download the dataset from Kaggle using the link below and save it as a `.csv` file:
 
-🔗 **[Realistic Loan Approval Dataset | US & Canada](https://www.kaggle.com/datasets/parthpatel2130/realistic-loan-approval-dataset-us-and-canada?resource=download)**
+**[Realistic Loan Approval Dataset | US & Canada](https://www.kaggle.com/datasets/parthpatel2130/realistic-loan-approval-dataset-us-and-canada?resource=download)**
 
 \*The CSV is also available directly in this repo
 
