@@ -30,7 +30,7 @@ Once the dataset is loaded, run all cells to reproduce the results.
 
 ## Results
 
-0) Model -> Accuracy
+Model -> Accuracy
 1) Logistic Regression (numeric features only) -> 73.56%
 2) Logistic Regression (+ categorical features) -> 73.89%
 3) Logistic Regression (+ StandardScaler) -> 87.08%
